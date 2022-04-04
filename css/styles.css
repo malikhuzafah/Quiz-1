@@ -60,3 +60,33 @@ html {
     overflow: hidden;
     width: fit-content;
 }
+
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        background-color: #ff9064;
+    }
+    #navbarNav {
+        height: 100vh;
+        transition: 0.5s;
+    }
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    #cv {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
