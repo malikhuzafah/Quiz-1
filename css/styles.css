@@ -12,6 +12,18 @@ html {
     padding: 20px 50px;
 }
 
+.my-btn {
+    color: #ff9064;
+    border-radius: 50px;
+    border-color: #ff9064;
+}
+
+.my-btn:hover {
+    background-color: #ff9064;
+    color: white;
+    transition: 500ms;
+}
+
 #cv-btn {
     color: white;
     border-radius: 50px;
@@ -62,6 +74,39 @@ html {
     width: fit-content;
 }
 
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
 
 @media only screen and (max-width: 767px) {
 }
@@ -90,4 +135,131 @@ html {
 
 @media only screen and (min-width: 1200px) {
 
+}
+
+
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.filter-button:hover {
+    font-size: 18px;
+    text-align: center;
+
+}
+.btn-default:active .filter-button:active {
+    background-color: #ff9064;
+    color: white;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.skilss-container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: white;
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+} 
+.skills-container *{
+    font-family: "Poppins",sans-serif;
+    color: #f2d974;
+    font-weight: 500;
+}
+#skills-title{
+    font-weight: bolder;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: 2px solid #f2d974;
+    border-radius: 20px;
+}
+  
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #f2d974;
+}
+  
+#flutter-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 95%;
+    }
+}
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 95%;
+    }
+}
+#unity-bar{
+    animation: unity-fill 2s forwards;
+}
+@keyframes unity-fill {
+    100%{
+        width: 72%;
+    }
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 85%;
+    }
+} 
+#firebase-bar{
+    animation: firebase-fill 2s forwards;
+}
+@keyframes firebase-fill{
+    100%{
+        width: 63%;
+    }
 }
