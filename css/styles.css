@@ -69,7 +69,7 @@ html {
     .navbar {
         background-color: #ff9064;
     }
-    #navbarNav {
+    #navbarSupportedContent {
         height: 100vh;
         transition: 0.5s;
     }

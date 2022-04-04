@@ -6,3 +6,8 @@ $(document).on("click", 'a[href^="#"]', function (event) {
         500
     );
 });
+
+function opennav() {
+    var nav = document.getElementById("navbarSupportedContent");
+    nav.style.height = "0";
+}
