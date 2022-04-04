@@ -29,6 +29,7 @@ html {
     color: white;
     /* height: 100vh; */
     padding: 100px 20px 20PX 20px;
+    margin: 0;
 }
 
 #topbar-container {
@@ -46,7 +47,7 @@ html {
 
 #topbar-about-container{
     padding: 70px 0;
-    text-align: left;
+    /* text-align: left; */
 }
 
 #image {
