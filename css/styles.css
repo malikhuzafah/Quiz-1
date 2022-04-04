@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    background-color: #ff8b5e;
+    padding: 20px 50px;
+}
+
+#topbar {
+    background-color: #ff8b5e;
+    /* height: 100vh; */
+    padding: 100px 20px 20PX 20px;
+}
+
+#topbar-container {
+    padding: 20px;
+}
+
+/* #topbar-about {
+    position: relative;
+}
+
+#topbar-about-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+#topbar-about {
+    padding-bottom: 100px;
+}
+
+#topbar-contact {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#topbar-about-container{
+    padding: 70px 0;
+    text-align: left;
+}
+
+#image {
+    border-radius: 50%;
+}
+
+#image-border {
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: fit-content;
+}
