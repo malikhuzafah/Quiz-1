@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -21,9 +22,9 @@
 
 <body>
     <div id="top"></div>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#top">Huzafah.</a>
+            <a class="navbar-brand" href="#top"  style="color: white;"><span class="h2"><strong>Huzafah.</strong></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -32,26 +33,26 @@
             <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about" style="color: white;">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio" style="color: white;">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills" style="color: white;">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education" style="color: white;">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Certifications</a>
+                        <a class="nav-link" href="#certifications" style="color: white;">Certifications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact" style="color: white;">Contact</a>
                     </li>
                 </ul>
                 <a href="#">
-                    <button class="btn btn-outline-success">Download CV</button>
+                    <button class="btn" id="cv-btn">Download CV</button>
                 </a>
             </div>
         </div>
@@ -71,37 +72,30 @@
                     </div>
                 </div>
             </div>
-            <div class="row w-100 text-center" id="topbar-contact">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="container">
-                        <span class="h6">Drop your Message</span><br>
+            <div class="row w-100" id="topbar-contact">
+                <div class="col-4">
+                    <div class="container text-start">
+                        <!-- <span class="h6">Drop your Message</span><br> -->
+                        <span class="material-icons md-12 h1">email</span><br>
                         <a href="mailto:huzafahrajput10@gmail.com" class="link-secondary">
-                            <span class="h5">Mail</span>
+                            <span class="h5 d-none d-lg-block">huzafahrajput10gmail.com</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="conatiner">
-                        <span class="h6">Call</span><br>
-                        <a class="link-secondary" href="tel:+923000361029">
-                            <span class="h5 text-center">+923000361029</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="container">
-                        <span class="h6">See</span><br>
+                <div class="col-4">
+                    <div class="container text-center">
+                        <span class="material-icons md-12 h1">account_circle</span><br>
                         <a class="link-secondary" href="https://linktr.ee/malik_huzafah">
-                            <span class="h5 text-right">linktree</span>
+                            <span class="h5 text-right d-none d-lg-block">linktree</span>
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-12">
-                    <div class="container">
-                        <a class="link-secondary" href="#about">
-                            <span>down</span>
+                <div class="col-4">
+                    <div class="conatiner text-end">
+                        <!-- <span class="h6">Call</span><br> -->
+                        <span class="material-icons md-12 h1">phone</span><br>
+                        <a class="link-secondary" href="tel:+923000361029">
+                            <span class="h5 text-end d-none d-lg-block">+923000361029</span>
                         </a>
                     </div>
                 </div>
@@ -109,7 +103,23 @@
         </div>
     </div>
 
-    <div id="about" style="height: 800px;"></div>
+    <div class="text-center" id="about" style="height: 800px;">
+        <div class="container" id="about" style="padding: 50px;">
+            <div class="container">
+                <div class="row">
+                    <span class="h1 text-center">About.</span>
+                    <span class="h2">Malik Muhammad Huzafah Khan</span>
+                    <span class="h2">Software Engineer</span>
+                    <p class="text-center text-justify">
+                        A motivated individual with a good knowledge of programming languages, to be associated with a
+                        dynamic and progressive organization that will allow me to utilize my abilities and
+                        qualifications
+                        in the field to add value to the organization while orviding me with opportunities for growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
