@@ -7,6 +7,7 @@ html {
 }
 
 /* body{
+    color: #fff;
 } */
 
 ::-webkit-scrollbar {
@@ -28,6 +29,14 @@ html {
     background-color: #ff9064;
     color: #fff;
     padding: 20px 50px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
 }
 
 .my-btn {
@@ -256,30 +265,14 @@ html {
     border-radius: 20px;
 }
 
-
 #skills {
+    background-color: #ff9064;
+}
+
+#skills-container {
     padding: 50px;
-}
-.skilss-container{
-    width: 100%;
-    padding: 30px 30px 50px;
     background-color: #fff;
-    border: 2px solid rgba(255,255,255,0.06);
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-    backdrop-filter: blur(10px);
-} 
-.skills-container *{
-    font-family: "Poppins",sans-serif;
-    color: #ff9064;
-    font-weight: 500;
-}
-#skills-title{
-    font-weight: bolder;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-size: 33px;
+    border-radius: 20px;
 }
 
 .skills:not(:last-child){
@@ -398,6 +391,16 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+    .portfolio-image {
+        width: 250px;
+        height: 250px;
+    }
+    #navbar {
+        padding: 10px 5px;
+    }
+    #skills-container {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
