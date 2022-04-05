@@ -70,7 +70,6 @@ body{
 #topbar {
     background-color: #ff9064;
     color: white;
-    /* height: 100vh; */
     padding: 100px 20px 20PX 20px;
     margin: 0;
 }
@@ -90,7 +89,6 @@ body{
 
 #topbar-about-container{
     padding: 70px 0;
-    /* text-align: left; */
 }
 
 #image {
@@ -103,39 +101,6 @@ body{
     border-radius: 50%;
     overflow: hidden;
     width: fit-content;
-}
-
-#menu-tile, #specials-tile, #map-tile {
-    height: 250px;
-    width: 100%;
-    margin-bottom: 15px;
-    position: relative;
-    border: 2px solid #3F0C1F;
-    border-radius: 20px;
-    overflow: hidden;
-}
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-    box-shadow: 0 1px 5px 1px #cccccc;
-}
-#menu-tile {
-    background: url('../images/menu-tile.jpg') no-repeat;
-    background-position: center;
-}
-#specials-tile {
-    background: url('../images/specials-tile.jpg') no-repeat;
-    background-position: center;
-}
-#menu-tile span, #specials-tile span, #map-tile span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    background-color: #000;
-    color: #fff;
-    opacity: .8;
 }
 
 .portfolio-image {
@@ -204,8 +169,8 @@ body{
     position: relative;
     -webkit-transition: .3s all;
     text-align: center;
-    color: #ff9064;
-    background-color: #fff;
+    color: #fff;
+    background-color: #ff9064;
     line-height: 48px;
     border-radius: 50px;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
@@ -457,4 +422,18 @@ body{
 
 a {
     text-decoration: none;
+}
+
+#about, #portfolio, #skills, #education, #certifications, #contact {
+    padding: 100px 0;
+}
+
+#copyright {
+    background-color: #ff9064;
+    height: 50px;
+    color: white;
+}
+
+.nav-item {
+    color: #fff;
 }
