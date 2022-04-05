@@ -27,7 +27,7 @@ body{
 
 #navbar {
     background-color: #ff9064;
-    color: white;
+    color: #fff;
     padding: 20px 50px;
 }
 
@@ -39,7 +39,7 @@ body{
 
 .my-btn:hover {
     background-color: #ff9064;
-    color: white;
+    color: #fff;
     transition: 500ms;
 }
 
@@ -56,20 +56,20 @@ body{
 }
 
 .my-btn-3 {
-    color: white;
+    color: #fff;
     border-radius: 50px;
-    border-color: white;
+    border-color: #fff;
 }
 
 .my-btn-3:hover {
-    background-color: white;
+    background-color: #fff;
     color: #ff9064;
     transition: 500ms;
 }
 
 #topbar {
     background-color: #ff9064;
-    color: white;
+    color: #fff;
     padding: 100px 20px 20PX 20px;
     margin: 0;
 }
@@ -97,7 +97,7 @@ body{
 
 #image-border {
     padding: 15px;
-    border: 3px solid white;
+    border: 3px solid #fff;
     border-radius: 50%;
     overflow: hidden;
     width: fit-content;
@@ -147,7 +147,7 @@ body{
 }
 
 #footer {
-    background-color: #ff9064;
+    background-color: #fff;
     padding-top: 30px;
     margin: 0;
     width: 100%;
@@ -235,21 +235,6 @@ body{
     }
 }
 
-.gallery-title {
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-}
 .filter-button {
     font-size: 18px;
     margin-bottom: 30px;
@@ -260,7 +245,7 @@ body{
 }
 .btn-default:active .filter-button:active {
     background-color: #ff9064;
-    color: white;
+    color: #fff;
 }
 
 .port-image {
@@ -279,7 +264,7 @@ body{
 .skilss-container{
     width: 100%;
     padding: 30px 30px 50px;
-    background-color: white;
+    background-color: #fff;
     border: 2px solid rgba(255,255,255,0.06);
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0,0,0,0.2);
@@ -372,14 +357,13 @@ body{
 }
 
 #name-err, #email-err, #msg-err, #submitted {
-    /* color: red; */
     font-weight: bolder;
 }
 
 
 #contact {
     background-color: #ff9064;
-    color: white;
+    color: #fff;
 }
 
 a {
@@ -393,11 +377,25 @@ a {
 #copyright {
     background-color: #ff9064;
     height: 50px;
-    color: white;
+    color: #fff;
 }
 
 .nav-item {
     color: #fff;
+}
+
+.title {
+    padding-bottom:10px;
+    border-bottom: 1px solid #ff9064;
+    color: #ff9064;
+    margin-bottom: 50px;
+}
+
+.title2 {
+    padding-bottom:10px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -409,9 +407,11 @@ a {
     }
     #navbarSupportedContent {
         height: 100vh;
-        transition: 0.5s;
+        transition: 0.5s ease;
     }
     .nav-item {
+        margin-top: 10px;
+        border-bottom: 1px solid #fff;
         width: 100%;
         text-align: center;
     }

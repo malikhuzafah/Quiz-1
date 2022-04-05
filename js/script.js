@@ -75,4 +75,8 @@ $(document).ready(function () {
 $(document).ready(function() {
     todayDate();
     $('#navbar-toggle').click(opennav);
+    $('.nav-link').click(function() {
+        $('#navbarSupportedContent').removeClass('show');
+    })
 });
+
