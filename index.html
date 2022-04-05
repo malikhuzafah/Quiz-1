@@ -64,15 +64,16 @@
     <div id="topbar">
         <div class="container w-100" id="topbar-container">
             <div class="row w-100" id="topbar-content">
-                <div class="col-sm-12 col-lg-4 text-end">
+                <div class="col-sm-12 col-lg-4">
                     <div class="container" id="image-border">
                         <img src="./images/1.jpg" class="image-fluid" alt="PP" width="270" height="270" id="image">
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-8" id="topbar-about">
                     <div class="container" id="topbar-about-container">
-                        <span class="h1" style="font-size: 3em"><strong>Malik Muhammad Huzafah <br
-                                    class="d-none d-lg-block">Khan</strong></span><br>
+                        <span class="h1" style="font-size: 2.5em">
+                            <strong>Malik Muhammad Huzafah <br class="d-none d-lg-block">Khan</strong>
+                        </span><br>
                         <span class="h2 text-muted">Software Engineer</span>
                     </div>
                 </div>
@@ -111,11 +112,11 @@
 
     <div class="container" id="about" style="padding: 50px; margin-top:50px;">
         <div class="container">
-            <div class="row">
-                <span class="h1 text-center">About.</span>
+            <div class="row text-center">
+                <span class="h1">About.</span>
                 <span class="h2">Malik Muhammad Huzafah Khan</span>
                 <span class="h2">Software Engineer</span>
-                <p class="text-center text-justify">
+                <p class="text-justify">
                     A motivated individual with a good knowledge of programming languages, to be associated with a
                     dynamic and progressive organization that will allow me to utilize my abilities and
                     qualifications
@@ -141,15 +142,45 @@
             </div>
             <br>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-6 filter flutter" align="center">
-                <img src="./images/pf1.png" class="img-fluid" style="border-radius: 20px;">
+                <a class="project-link link-secondary" href="" target="_blank">
+                    <div class="portfolio-image-container img-fluid">
+                        <img src="./images/pf1.png" class="portfolio-image img-fluid">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <p class="h4">Flutter - Quiz App</p>
+                                <button class="my-btn-2 btn">Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-6 filter flutter" align="center">
-                <img src="./images/pf2.png" class="img-fluid" style="border-radius: 20px;">
+                <a class="project-link link-secondary" href="" target="_blank">
+                    <div class="portfolio-image-container img-fluid">
+                        <img src="./images/pf2.png" class="portfolio-image img-fluid">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <p class="h4">Flutter - Quiz App</p>
+                                <button class="my-btn-2 btn">Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-6 filter flutter" align="center">
-                <img src="./images/pf3.png" class="img-fluid" style="border-radius: 20px;">
+                <a class="project-link link-secondary" href="" target="_blank">
+                    <div class="portfolio-image-container img-fluid">
+                        <img src="./images/pf3.png" class="portfolio-image img-fluid">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <p class="h4">Flutter - Quiz App</p>
+                                <button class="my-btn-2 btn">Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-6 filter flutter" align="center">
@@ -194,8 +225,8 @@
         <span class="h2" id="skills-title">Skills </span>
         <div class="skills">
             <div class="details">
-                <span>Flutter</span>
-                <span>95%</span>
+                <span class="h6">Flutter</span>
+                <span class="h6">95%</span>
             </div>
             <div class="bar">
                 <div id="flutter-bar"></div>
@@ -203,8 +234,8 @@
         </div>
         <div class="skills">
             <div class="details">
-                <span>Java</span>
-                <span>95%</span>
+                <span class="h6">Java</span>
+                <span class="h6">95%</span>
             </div>
             <div class="bar">
                 <div id="java-bar"></div>
@@ -212,8 +243,8 @@
         </div>
         <div class="skills">
             <div class="details">
-                <span>Unity</span>
-                <span>72%</span>
+                <span class="h6">Unity</span>
+                <span class="h6">72%</span>
             </div>
             <div class="bar">
                 <div id="unity-bar"></div>
@@ -221,8 +252,8 @@
         </div>
         <div class="skills">
             <div class="details">
-                <span>HTML, CSS, JavaScript</span>
-                <span>85%</span>
+                <span class="h6">HTML, CSS, JavaScript</span>
+                <span class="h6">85%</span>
             </div>
             <div class="bar">
                 <div id="html-bar"></div>
@@ -230,14 +261,131 @@
         </div>
         <div class="skills">
             <div class="details">
-                <span>Firebase</span>
-                <span>63%</span>
+                <span class="h6">Firebase</span>
+                <span class="h6">63%</span>
             </div>
             <div class="bar">
                 <div id="firebase-bar"></div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h1">Education</p>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="" style="text-decoration: none; color: black;">
+                    <div class="container text-center">
+                        <img src="./images/e1.gif" alt="quid-e-azam" class="" height="200" width="200">
+                        <p class="h4">Quid-e-Azam Public College</p>
+                        <p class="h5">Matric | Computer</p>
+                        <p class="h6"><span class="material-icons md-12 h6">place</span> Gujranwala</p>
+                        <p class="blockquote-footer">2015 - 2017</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="" style="text-decoration: none; color: #000;">
+                    <div class="container text-center">
+                        <img src="./images/e2.png" alt="quid-e-azam" class="" height="200" width="200">
+                        <p class="h4">Punjab Group of Colleges</p>
+                        <p class="h5">Fsc | Pre-Engineering</p>
+                        <p class="h6"><span class="material-icons md-12 h6">place</span> Gujranwala</p>
+                        <p class="blockquote-footer">2017 - 2019</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="" style="text-decoration: none; color: #000;">
+                    <div class="container text-center">
+                        <img src="./images/e3.png" alt="quid-e-azam" class="" height="200" width="200">
+                        <p class="h4">COMSATS University Islamabad</p>
+                        <p class="h5">Matric | Computer</p>
+                        <p class="h6"><span class="material-icons md-12 h6">place</span> Lahore</p>
+                        <p class="blockquote-footer">2019 - Present</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h1">Certifications</p>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="container text-center">
+                    <img src="./images/c1.jpeg" alt="c1" class="img-cert img-fluid">
+                    <p class="h4">Intro to Game Development</p>
+                    <p class="h5">Michigan State University</p>
+                    <p class="h6">Coursera</p>
+                    <a href="">
+                        <span class="my-btn btn">Verify</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="container text-center">
+                    <img src="./images/c2.jpeg" alt="c2" class="img-cert img-fluid">
+                    <p class="h4">Priciples of Game Design</p>
+                    <p class="h5">Michigan State University</p>
+                    <p class="h6">Coursera</p>
+                    <a href="">
+                        <span class="my-btn btn">Verify</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="container text-center">
+                    <img src="./images/c3.jpeg" alt="c2" class="img-cert img-fluid">
+                    <p class="h4">Business of Games and Enterpreneurship</p>
+                    <p class="h5">Michigan State University</p>
+                    <p class="h6">Coursera</p>
+                    <a href="">
+                        <span class="my-btn btn">Verify</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div>
+                    <p class="h2">Say hello.</p>
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="name-input" class="form-label">Name</label> -->
+                    <input type="text" class="form-control" id="name-input" placeholder="Full Name">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="email-input" class="form-label">Email address</label> -->
+                    <input type="email" class="form-control" id="email-input" placeholder="Email Address">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div>
+                    <p class="h2">Lets Get In Touch.</p>
+                    <p>I enjoy discussing new projects and design challenges. Please share as much info, as possible so
+                        we can get the most out of our first catch-up.</p>
+                    <p class="h4">Address:</p>
+                    <p class="h6">COMSATS University Islamabad, Lahore Campus</p>
+                    <p class="h4">Call:</p>
+                    <p class="h6">+923000361029</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
