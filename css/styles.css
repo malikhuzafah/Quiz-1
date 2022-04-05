@@ -6,9 +6,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    /* background-color: #123; */
-}
+/* body{
+} */
 
 ::-webkit-scrollbar {
     width: 10px;
