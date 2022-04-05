@@ -71,8 +71,3 @@ $(document).ready(function () {
         }
     });
 })
-
-var m = document.createElement('meta');
-m.name = 'theme-color';
-m.content = '#ff9064';
-document.head.appendChild(m);
