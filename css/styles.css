@@ -146,7 +146,6 @@ body{
     border-radius: 30px;
 }
 
-
 #footer {
     background-color: #ff9064;
     padding-top: 30px;
@@ -234,43 +233,6 @@ body{
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
-}
-
-@media only screen and (max-width: 767px) {
-}
-
-@media only screen and (max-width: 991px) {
-    .navbar {
-        background-color: #ff9064;
-    }
-    #navbarSupportedContent {
-        height: 100vh;
-        transition: 0.5s;
-    }
-    .nav-item {
-        width: 100%;
-        text-align: center;
-    }
-    #cv {
-        width: 100%;
-        text-align: center;
-    }
-    .overlay{
-        opacity: 1;
-    }
-    #topbar-about-container {
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    #topbar-about-container {
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-
 }
 
 .gallery-title {
@@ -436,4 +398,41 @@ a {
 
 .nav-item {
     color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        background-color: #ff9064;
+    }
+    #navbarSupportedContent {
+        height: 100vh;
+        transition: 0.5s;
+    }
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    #cv {
+        width: 100%;
+        text-align: center;
+    }
+    .overlay{
+        opacity: 1;
+    }
+    #topbar-about-container {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #topbar-about-container {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
 }
