@@ -442,3 +442,20 @@ a {
 #about-link, #portfolio-link, #skills-link, #education-link, #cert-link, #contact-link {
     color: #fff;
 }
+
+#about-container {
+    background-color: #ff9064;
+    color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+#portfolio {
+    background-color: #ff9064;
+}
+
+#portfolio-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
