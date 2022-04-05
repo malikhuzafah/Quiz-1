@@ -178,6 +178,95 @@ html {
 }
 
 
+#footer {
+    background-color: #ff9064;
+    padding-top: 30px;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.icons-container{
+    height: 100px;
+    width: 400px;
+}
+
+.social-icons .item {
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    transition: .3s all;
+    position: relative;
+    -webkit-transition: .3s all;
+    text-align: center;
+    color: #ff9064;
+    background-color: #fff;
+    line-height: 48px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.18), 0px 4px 15px 0px rgba(0,0,0,0.15);
+}
+  
+.social-icons.spinned .item:hover {
+    -webkit-animation: Social-Icons-Flipping .3s;
+    animation: Social-Icons-Flipping .3s
+}
+.social-icons .item:hover {
+    text-decoration: none;
+    background-color: #42474E;
+    box-shadow: 0 -1px 0 transparent inset, 0 2px 3px rgba(0, 0, 0, .1), 0 4px 8px rgba(0, 0, 0, .3);
+    color: #fff!important
+}
+.social-icons .item .fa {
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+.facebook:hover {
+    background-color: #425F9C!important
+}
+.twitter:hover {
+    background-color: #00ACEE!important
+}
+.github:hover {
+    background-color: #c00!important
+}
+.linkedin:hover {
+    background-color: #0073B2!important
+}
+.codewars:hover {
+    background-color: #EB3E40!important
+}
+.instagram:hover {
+    background-color: #5E8AAC!important
+}
+.phone:hover {
+    background-color: #0073B2!important;
+}
+  
+@-webkit-keyframes Social-Icons-Flipping {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@keyframes Social-Icons-Flipping {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
 @media only screen and (max-width: 767px) {
 }
 

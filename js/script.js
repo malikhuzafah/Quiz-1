@@ -30,3 +30,9 @@ $(document).ready(function(){
     $(this).addClass("active");
     console.log($('#navbar').height());
 });
+
+function todayDate(){
+    var d = new Date();
+    var n = d.getFullYear() + "  ";
+    return document.getElementById("date").innerHTML = n;
+}
