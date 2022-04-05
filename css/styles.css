@@ -438,3 +438,7 @@ a {
 @media only screen and (min-width: 1200px) {
 
 }
+
+#about-link, #portfolio-link, #skills-link, #education-link, #cert-link, #contact-link {
+    color: #fff;
+}
