@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    /* background-color: #123; */
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -51,13 +55,13 @@ html {
     transition: 500ms;
 }
 
-#cv-btn {
+.my-btn-3 {
     color: white;
     border-radius: 50px;
     border-color: white;
 }
 
-#cv-btn:hover {
+.my-btn-3:hover {
     background-color: white;
     color: #ff9064;
     transition: 500ms;
@@ -441,7 +445,19 @@ html {
 }
 
 #name-err, #email-err, #msg-err, #submitted {
-    color: red;
+    /* color: red; */
     font-weight: bolder;
 }
 
+
+#contact {
+    background-color: #ff9064;
+    color: white;
+}
+
+/* #about {
+    background-image: url('../images/1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
