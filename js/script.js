@@ -71,3 +71,8 @@ $(document).ready(function () {
         }
     });
 })
+
+$(document).ready(function() {
+    todayDate();
+    $('#navbar-toggle').click(opennav);
+});

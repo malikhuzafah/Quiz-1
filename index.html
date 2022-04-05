@@ -23,41 +23,41 @@
     <title>Huzafah.</title>
 </head>
 
-<body onload="todayDate();">
+<body>
     <div id="top"></div>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#top" style="color: white;"><span
-                    class="h2"><strong>Huzafah.🥱</strong></span></a>
+            <a class="navbar-brand" href="#top">
+                <span class="h2"><strong>Huzafah.🥱</strong></span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" onclick="opennav();">
+                aria-label="Toggle navigation" id="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color: white;"><strong>About</strong></a>
+                        <a class="nav-link" href="#about"><strong>About</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio" style="color: white;"><strong>Portfolio</strong></a>
+                        <a class="nav-link" href="#portfolio"><strong>Portfolio</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills" style="color: white;"><strong>Skills</strong></a>
+                        <a class="nav-link" href="#skills"><strong>Skills</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education" style="color: white;"><strong>Education</strong></a>
+                        <a class="nav-link" href="#education"><strong>Education</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#certifications"
-                            style="color: white;"><strong>Certifications</strong></a>
+                        <a class="nav-link" href="#certifications"><strong>Certifications</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color: white;"><strong>Contact</strong></a>
+                        <a class="nav-link" href="#contact"><strong>Contact</strong></a>
                     </li>
                 </ul>
                 <div id="cv">
-                    <a href="#">
+                    <a href="./download/cv.pdf" download>
                         <button class="my-btn-3 btn" id="cv-btn"><strong>Download CV</strong></button>
                     </a>
                 </div>
@@ -84,7 +84,7 @@
             <div class="row w-100 text-center" id="topbar-contact">
                 <div class="col-4">
                     <div class="container">
-                        <a href="mailto:huzafahrajput10@gmail.com" class="link-secondary">
+                        <a href="mailto:huzafahrajput10@gmail.com" class="link-light">
                             <span class="material-icons md-12 h1">email</span><br>
                             <span class="h5 d-none d-lg-block">huzafahrajput10gmail.com</span>
                         </a>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-4">
                     <div class="container">
-                        <a class="link-secondary" href="https://linktr.ee/malik_huzafah" target="_blank">
+                        <a class="link-light" href="https://linktr.ee/malik_huzafah" target="_blank">
                             <span class="material-icons md-12 h1">account_circle</span><br>
                             <span class="h5 d-none d-lg-block">linktree</span>
                         </a>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-4">
                     <div class="conatiner">
-                        <a class="link-secondary" href="tel:+923000361029">
+                        <a class="link-light" href="tel:+923000361029">
                             <span class="material-icons md-12 h1">phone</span><br>
                             <span class="h5 d-none d-lg-block">+923000361029</span>
                         </a>
@@ -110,39 +110,29 @@
         </div>
     </div>
 
-    <div id="about" style="height: 100vh;">
-        <div class="row w-100" style="height: 100%;">
-            <div class="col-6">
-                <div class="" style="background-image: url('./images/1.jpg'); width: 100%; height: 100%; background-size: contain; background-attachment: fixed; background-repeat: no-repeat;"></div>
-            </div>
-            <div class="col-6" style="padding: 0;">
-                <div class="" style="margin: 0; padding: 0;">
-                    <div class="row text-center">
-                        <div class="col-12">
-                            <h1 class="">About.</h1>
-                        </div>
-                        <!-- <div class="col-6">
-                            <div class="container" style="background-image: url('./images/1.jpg'); background-attachment: fixed; width: 100%; height: 100%;"></div>
-                        </div> -->
-                        <!-- <div class="col-6"> -->
-                            <div class="container">
-                                <span class="h2">Malik Muhammad Huzafah Khan</span><br>
-                                <span class="h2">Software Engineer</span>
-                                <p class="text-justify">
-                                    A motivated individual with a good knowledge of programming languages, to be associated with
-                                    a
-                                    dynamic and progressive organization that will allow me to utilize my abilities and
-                                    qualifications
-                                    in the field to add value to the organization while orviding me with opportunities for
-                                    growth.
-                                </p>
-                            </div>
-                        <!-- </div> -->
-                    </div>
+    <div id="about" style="padding: 100px 0;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="gallery col-12">
+                    <h1 class="gallery-title">About.</h1>
                 </div>
+                <dic class="col-12">
+                    <div class="container">
+                        <span class="h2">Malik Muhammad Huzafah Khan</span><br>
+                        <span class="h3 text-muted">Software Engineer</span>
+                        <p class="text-justify h4">
+                            A motivated individual with a good knowledge of programming languages, to be associated with
+                            a
+                            dynamic and progressive organization that will allow me to utilize my abilities and
+                            qualifications
+                            in the field to add value to the organization while orviding me with opportunities for
+                            growth.
+                        </p>
+                    </div>
+                </dic>
             </div>
         </div>
-        
+
     </div>
 
     <div class=" w-100" id="portfolio" style="padding: 100px 0;">

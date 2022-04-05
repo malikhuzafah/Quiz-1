@@ -455,9 +455,6 @@ body{
     color: white;
 }
 
-/* #about {
-    background-image: url('../images/1.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-} */
+a {
+    text-decoration: none;
+}
