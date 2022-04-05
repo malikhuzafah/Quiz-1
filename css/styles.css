@@ -304,8 +304,6 @@ html {
 
 }
 
-
-
 .gallery-title {
     font-size: 36px;
     color: #42B32F;
@@ -328,7 +326,6 @@ html {
 .filter-button:hover {
     font-size: 18px;
     text-align: center;
-
 }
 .btn-default:active .filter-button:active {
     background-color: #ff9064;
@@ -344,6 +341,10 @@ html {
     border-radius: 20px;
 }
 
+
+#skills {
+    padding: 50px;
+}
 .skilss-container{
     width: 100%;
     padding: 30px 30px 50px;
@@ -355,7 +356,7 @@ html {
 } 
 .skills-container *{
     font-family: "Poppins",sans-serif;
-    color: #f2d974;
+    color: #ff9064;
     font-weight: 500;
 }
 #skills-title{
@@ -378,7 +379,7 @@ html {
 }
 .bar{
     position: relative;
-    border: 2px solid #f2d974;
+    border: 2px solid #ff9064;
     border-radius: 20px;
 }
   
@@ -387,13 +388,13 @@ html {
     width: 0;
     height: 9px;
     border-radius: 10px;
-    background-color: #f2d974;
+    background-color: #ff9064;
 }
   
 #flutter-bar{
-    animation: java-fill 2s forwards;
+    animation: flutter-fill 2s forwards;
 }
-@keyframes java-fill{
+@keyframes flutter-fill{
     100%{
         width: 95%;
     }
@@ -403,7 +404,7 @@ html {
 }
 @keyframes java-fill{
     100%{
-        width: 95%;
+        width: 90%;
     }
 }
 #unity-bar{
@@ -428,5 +429,13 @@ html {
 @keyframes firebase-fill{
     100%{
         width: 63%;
+    }
+}
+#dart-bar{
+    animation: dart-fill 2s forwards;
+}
+@keyframes dart-fill{
+    100%{
+        width: 80%;
     }
 }
