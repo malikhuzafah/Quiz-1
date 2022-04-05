@@ -400,7 +400,7 @@ a {
     background-color: #ff9064;
     color: #fff;
     border-radius: 20px;
-    padding: 50px;
+    padding: 50px 100px;
 }
 
 #portfolio {
@@ -438,6 +438,14 @@ a {
     margin-bottom: 15px;
 }
 
+.cert-container {
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 767px) {
     .portfolio-image {
         width: 250px;
@@ -456,6 +464,37 @@ a {
     .img-cert {
         width: 200px;
         height: auto;
+    }
+    #certifications  .h4 {
+        font-size: 1.2em;
+    }
+    #certifications  .h5 {
+        font-size: 1em;
+    }
+    #education .h4 {
+        font-size: 1.2em;
+    }
+    #education .h5 {
+        font-size: 1em;
+    }
+    #education .h6 {
+        font-size: 0.8em;
+    }
+    #education .blockquote-footer {
+        font-size: 0.6em;
+    }
+    #contact-info {
+        text-align: center;
+        text-align: justify;
+    }
+    #about-container {
+        background-color: #ff9064;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px 50px;
+    }
+    #about, #portfolio, #skills, #education, #certifications, #contact {
+        padding: 50px 0;
     }
 }
 
