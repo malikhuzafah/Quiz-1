@@ -439,3 +439,9 @@ html {
         width: 80%;
     }
 }
+
+#name-err, #email-err, #msg-err, #submitted {
+    color: red;
+    font-weight: bolder;
+}
+

@@ -28,7 +28,6 @@ $(document).ready(function(){
         $(this).removeClass("active");
     }
     $(this).addClass("active");
-    console.log($('#navbar').height());
 });
 
 function todayDate(){
@@ -36,3 +35,44 @@ function todayDate(){
     var n = d.getFullYear() + "  ";
     return document.getElementById("date").innerHTML = n;
 }
+
+$(document).ready(function () {
+    $('#send').click(function() {
+        var c = 0;
+        if ($('#name-input').val().length === 0) {
+            $('#name-err').html("Name is required!");
+        }
+        else {
+            $('#name-err').html('');
+            c++;
+        }
+        if ($('#email-input').val().length === 0) {
+            $('#email-err').html("Email is required!");
+        }
+        else {
+            $('#email-err').html('');
+            c++
+        }
+        if ($('#msg-input').val().length === 0) {
+            $('#msg-err').html("Please enter some Message!");
+        }
+        else {
+            $('#msg-err').html('');
+            c++
+        }
+        if (c>=3) {
+            $('#name-input').val('');
+            $('#email-input').val('');
+            $('#msg-input').val('');
+            $('#submitted').html('Message Recived! Thank You :)');
+        }
+        else {
+            $('#submitted').html('');
+        }
+    });
+})
+
+var m = document.createElement('meta');
+m.name = 'theme-color';
+m.content = '#125487';
+document.head.appendChild(m);
