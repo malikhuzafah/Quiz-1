@@ -6,9 +6,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body{
-    color: #fff;
-} */
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Scroll Bar Start */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -25,6 +32,10 @@ html {
     background: #b30000;
 }
 
+/* Scroll Bar End */
+
+/* Navbar Start */
+
 #navbar {
     background-color: #ff9064;
     color: #fff;
@@ -39,41 +50,13 @@ html {
     color: #fff;
 }
 
-.my-btn {
-    color: #ff9064;
-    border-radius: 50px;
-    border-color: #ff9064;
-}
-
-.my-btn:hover {
-    background-color: #ff9064;
+#about-link, #portfolio-link, #skills-link, #education-link, #cert-link, #contact-link {
     color: #fff;
-    transition: 500ms;
 }
 
-.my-btn-2 {
-    color: black;
-    border-radius: 50px;
-    border-color: black;
-}
+/* Navbar End */
 
-.my-btn-2:hover {
-    background-color: black;
-    color: #ff9064;
-    transition: 500ms;
-}
-
-.my-btn-3 {
-    color: #fff;
-    border-radius: 50px;
-    border-color: #fff;
-}
-
-.my-btn-3:hover {
-    background-color: #fff;
-    color: #ff9064;
-    transition: 500ms;
-}
+/* Topbar Start */
 
 #topbar {
     background-color: #ff9064;
@@ -111,6 +94,114 @@ html {
     width: fit-content;
 }
 
+/* TopBar End */
+
+/* Custom Buttons Start */
+
+.my-btn {
+    color: #ff9064;
+    border-radius: 50px;
+    border-color: #ff9064;
+}
+
+.my-btn:hover {
+    background-color: #ff9064;
+    color: #fff;
+    transition: 500ms;
+}
+
+.my-btn-2 {
+    color: black;
+    border-radius: 50px;
+    border-color: black;
+}
+
+.my-btn-2:hover {
+    background-color: black;
+    color: #ff9064;
+    transition: 500ms;
+}
+
+.my-btn-3 {
+    color: #fff;
+    border-radius: 50px;
+    border-color: #fff;
+}
+
+.my-btn-3:hover {
+    background-color: #fff;
+    color: #ff9064;
+    transition: 500ms;
+}
+
+/* Custom Buttons End */
+
+.title {
+    padding-bottom:10px;
+    border-bottom: 1px solid #ff9064;
+    color: #ff9064;
+    margin-bottom: 50px;
+}
+
+.title2 {
+    padding-bottom:10px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#about, #portfolio, #skills, #education, #certifications, #contact {
+    padding: 100px 0;
+}
+
+.portfolio-image, .img-cert {
+    box-shadow: 5px 5px 18px #888888;
+    margin-bottom: 15px;
+}
+
+/* About Start */
+
+#about-container {
+    background-color: #ff9064;
+    color: #fff;
+    border-radius: 20px;
+    padding: 50px 100px;
+}
+
+#about-bio {
+    text-align: justify;
+}
+
+#about-resume {
+    margin-right: 10px;
+}
+
+/* About End */
+
+/* Portfolio start */
+
+#portfolio {
+    background-color: #ff9064;
+}
+
+#portfolio-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.portfolio-item-title {
+    margin-bottom: 15px;
+}
+
+.portfolio-item-link {
+    color: #ff9064;
+}
+
+.portfolio-item-link:hover {
+    color: #ff9064;
+}
+
 .portfolio-image {
     border-radius: 20px;
 }
@@ -119,6 +210,14 @@ html {
     width: 365px;
     position: relative;
     border-radius: 20px;
+}
+
+.portfolio-image-container:hover .portfolio-image {
+    opacity: 0.3;
+}
+
+.portfolio-image-container:hover .overlay {
+    opacity: 1;
 }
 
 .overlay {
@@ -134,9 +233,6 @@ html {
     background-color: rgba(255, 144, 100, 0.7);
     border-radius: 20px;
 }
-.portfolio-image-container:hover .overlay {
-    opacity: 1;
-}
 
 .overlay-text {
     color: #000;
@@ -150,9 +246,143 @@ html {
     text-align: center;
 }
 
+.gallery_product {
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.filter-button {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.filter-button:hover {
+    font-size: 18px;
+    text-align: center;
+}
+.btn-default:active .filter-button:active {
+    background-color: #ff9064;
+    color: #fff;
+}
+
+/* Portfolio End */
+
+/* Skills Start  */
+
+#skills {
+    background-color: #ff9064;
+}
+
+#skills-container {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: 2px solid #ff9064;
+    border-radius: 20px;
+}
+  
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ff9064;
+}
+  
+#flutter-bar{
+    animation: flutter-fill 2s forwards;
+}
+@keyframes flutter-fill{
+    100%{
+        width: 95%;
+    }
+}
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 90%;
+    }
+}
+#unity-bar{
+    animation: unity-fill 2s forwards;
+}
+@keyframes unity-fill {
+    100%{
+        width: 72%;
+    }
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 85%;
+    }
+} 
+#firebase-bar{
+    animation: firebase-fill 2s forwards;
+}
+@keyframes firebase-fill{
+    100%{
+        width: 63%;
+    }
+}
+#dart-bar{
+    animation: dart-fill 2s forwards;
+}
+@keyframes dart-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+/* Skills End  */
+
+/* Certifications Start  */
+
 .img-cert {
     border-radius: 30px;
 }
+
+.cert-container {
+    margin-bottom: 30px;
+}
+
+/* Certifications End  */
+
+/* Contact Start  */
+
+#contact {
+    background-color: #ff9064;
+    color: #fff;
+}
+
+#name-err, #email-err, #msg-err, #submitted {
+    font-weight: bolder;
+}
+
+#contact-info {
+    margin-bottom: 50px;
+}
+
+/* Contact End  */
+
+/* Footer Start  */
 
 #footer {
     background-color: #fff;
@@ -243,233 +473,43 @@ html {
     }
 }
 
-.filter-button {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-.filter-button:hover {
-    font-size: 18px;
-    text-align: center;
-}
-.btn-default:active .filter-button:active {
-    background-color: #ff9064;
-    color: #fff;
-}
-
-.port-image {
-    width: 100%;
-}
-
-.gallery_product {
-    margin-bottom: 30px;
-    border-radius: 20px;
-    
-}
-
-#skills {
-    background-color: #ff9064;
-}
-
-#skills-container {
-    padding: 50px;
-    background-color: #fff;
-    border-radius: 20px;
-}
-
-.skills:not(:last-child){
-    margin-bottom: 30px;
-}
-
-.details{
-    width: 100%;
-    display: flex;  
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.bar{
-    position: relative;
-    border: 2px solid #ff9064;
-    border-radius: 20px;
-}
-  
-.bar div{
-    position: relative;
-    width: 0;
-    height: 9px;
-    border-radius: 10px;
-    background-color: #ff9064;
-}
-  
-#flutter-bar{
-    animation: flutter-fill 2s forwards;
-}
-@keyframes flutter-fill{
-    100%{
-        width: 95%;
-    }
-}
-#java-bar{
-    animation: java-fill 2s forwards;
-}
-@keyframes java-fill{
-    100%{
-        width: 90%;
-    }
-}
-#unity-bar{
-    animation: unity-fill 2s forwards;
-}
-@keyframes unity-fill {
-    100%{
-        width: 72%;
-    }
-}
-#html-bar{
-    animation: html-fill 2s forwards;
-}
-@keyframes html-fill{
-    100%{
-        width: 85%;
-    }
-} 
-#firebase-bar{
-    animation: firebase-fill 2s forwards;
-}
-@keyframes firebase-fill{
-    100%{
-        width: 63%;
-    }
-}
-#dart-bar{
-    animation: dart-fill 2s forwards;
-}
-@keyframes dart-fill{
-    100%{
-        width: 80%;
-    }
-}
-
-#name-err, #email-err, #msg-err, #submitted {
-    font-weight: bolder;
-}
-
-
-#contact {
-    background-color: #ff9064;
-    color: #fff;
-}
-
-a {
-    text-decoration: none;
-}
-
-#about, #portfolio, #skills, #education, #certifications, #contact {
-    padding: 100px 0;
-}
-
 #copyright {
     background-color: #ff9064;
     height: 50px;
     color: #fff;
 }
 
-.nav-item {
-    color: #fff;
-}
-
-.title {
-    padding-bottom:10px;
-    border-bottom: 1px solid #ff9064;
-    color: #ff9064;
-    margin-bottom: 50px;
-}
-
-.title2 {
-    padding-bottom:10px;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    margin-bottom: 50px;
-}
-
-
-#about-link, #portfolio-link, #skills-link, #education-link, #cert-link, #contact-link {
-    color: #fff;
-}
-
-#about-container {
-    background-color: #ff9064;
-    color: #fff;
-    border-radius: 20px;
-    padding: 50px 100px;
-}
-
-#portfolio {
-    background-color: #ff9064;
-}
-
-#portfolio-container {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 50px;
-}
-
-.portfolio-item-title {
-    margin-bottom: 15px;
-}
-
-.portfolio-item-link {
-    color: #ff9064;
-}
-
-.portfolio-item-link:hover {
-    color: #ff9064;
-}
-
-.portfolio-image-container:hover .portfolio-image {
-    opacity: 0.3;
-}
-
-.portfolio-image-container:hover .overlay {
-    opacity: 1;
-}
-
-.portfolio-image, .img-cert {
-    box-shadow: 5px 5px 18px #888888;
-    margin-bottom: 15px;
-}
-
-.cert-container {
-    margin-bottom: 30px;
-}
-
-#contact-info {
-    margin-bottom: 50px;
-}
+/* Footer End  */
 
 @media only screen and (max-width: 767px) {
+
+    #navbar {
+        padding: 10px 5px;
+    }
+
+    #about, #portfolio, #skills, #education, #certifications, #contact {
+        padding: 50px 0;
+    }
+
+    #about-container {
+        background-color: #ff9064;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px 50px;
+    }
+
     .portfolio-image {
         width: 250px;
         height: 250px;
     }
-    #navbar {
-        padding: 10px 5px;
-    }
+    
     #skills-container {
         padding: 20px;
     }
+
     .img-edu {
         width: 100px;
         height: 100px;
-    }
-    .img-cert {
-        width: 200px;
-        height: auto;
-    }
-    #certifications  .h4 {
-        font-size: 1.2em;
-    }
-    #certifications  .h5 {
-        font-size: 1em;
     }
     #education .h4 {
         font-size: 1.2em;
@@ -483,18 +523,22 @@ a {
     #education .blockquote-footer {
         font-size: 0.6em;
     }
+
+    .img-cert {
+        width: 200px;
+        height: auto;
+    }
+
+    #certifications  .h4 {
+        font-size: 1.2em;
+    }
+    #certifications  .h5 {
+        font-size: 1em;
+    }
+
     #contact-info {
         text-align: center;
         text-align: justify;
-    }
-    #about-container {
-        background-color: #ff9064;
-        color: #fff;
-        border-radius: 20px;
-        padding: 20px 50px;
-    }
-    #about, #portfolio, #skills, #education, #certifications, #contact {
-        padding: 50px 0;
     }
 }
 
@@ -516,13 +560,15 @@ a {
         width: 100%;
         text-align: center;
     }
-    .overlay{
-        display: none;
-    }
 
     #topbar-about-container {
         text-align: center;
     }
+
+    .overlay{
+        display: none;
+    }
+
     .img-edu {
         width: 150px;
         height: 150px;
