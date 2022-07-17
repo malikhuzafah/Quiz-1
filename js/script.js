@@ -74,34 +74,34 @@ $(document).ready(function () {
   });
 });
 
-$(function () {
-  $.ajax({
-    url: "../data/data.json",
-    method: "GET",
-    success: (res) => {
-      $("#portfolioTiles").empty();
-      for (var i = 0; i < res.length; i++) {
-        $("#portfolioTiles").append(
-          '<div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ' +
-            res[i].filter +
-            '" align="center"><a class="project-link link-secondary" href="' +
-            res[i].link +
-            '" target="_blank"><div class="portfolio-image-container img-fluid"><img src="' +
-            res[i].image +
-            '" class="portfolio-image img-fluid"><div class="overlay"><div class="overlay-text"><p class="h4">' +
-            res[i].name +
-            '</p><button class="my-btn-2 btn"><strong>Code</strong></button></div></div></div></a><div class="container text-center"><a href="' +
-            res[i].link +
-            '"class="portfolio-item-link" target="_blank"><p class="portfolio-item-title h3"><strong>' +
-            res[i].main +
-            '</strong></p><p class="h6 blockquote-footer">' +
-            res[i].sub +
-            "</p></a></div></div>"
-        );
-      }
-    },
-    error: (err) => {
-      console.log(err);
-    },
-  });
-});
+// $(function () {
+//   $.ajax({
+//     url: "../data/data.json",
+//     method: "GET",
+//     success: (res) => {
+//       $("#portfolioTiles").empty();
+//       for (var i = 0; i < res.length; i++) {
+//         $("#portfolioTiles").append(
+//           '<div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ' +
+//             res[i].filter +
+//             '" align="center"><a class="project-link link-secondary" href="' +
+//             res[i].link +
+//             '" target="_blank"><div class="portfolio-image-container img-fluid"><img src="' +
+//             res[i].image +
+//             '" class="portfolio-image img-fluid"><div class="overlay"><div class="overlay-text"><p class="h4">' +
+//             res[i].name +
+//             '</p><button class="my-btn-2 btn"><strong>Code</strong></button></div></div></div></a><div class="container text-center"><a href="' +
+//             res[i].link +
+//             '"class="portfolio-item-link" target="_blank"><p class="portfolio-item-title h3"><strong>' +
+//             res[i].main +
+//             '</strong></p><p class="h6 blockquote-footer">' +
+//             res[i].sub +
+//             "</p></a></div></div>"
+//         );
+//       }
+//     },
+//     error: (err) => {
+//       console.log(err);
+//     },
+//   });
+// });
